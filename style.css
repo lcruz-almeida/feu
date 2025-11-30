@@ -125,17 +125,29 @@ button:hover { background: var(--gold); color: #000; transform: scale(1.05); }
 /* --- Fogo Realista --- */
 .fire-container {
     position: absolute;
-    z-index: 100; /* Maior que o livro */
-    pointer-events: none;
-    bottom: 20px; /* Ajusta a altura da chama */
+    bottom: 20px;
     left: 50%;
-    transform: translateX(-50%);
     width: 60px;
     height: 60px;
+    pointer-events: none;
     opacity: 0;
     transition: opacity 0.3s;
+    z-index: 40; /* base do container */
 }
 
 .fire-container.active {
     opacity: 1;
 }
+
+/* 🔥 Chama dentro do livro */
+.flame-box {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50; /* acima das páginas */
+    width: 60px;
+    height: 60px;
+    pointer-events: none;
+}
+
