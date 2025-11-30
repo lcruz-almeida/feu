@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<!-- Fundo e estrelas -->
 <div class="stars-container">
     <div class="stars-layer layer-1"></div>
     <div class="stars-layer layer-2"></div>
@@ -17,25 +18,30 @@
 
 <audio id="soundPage" src="page.mp3" preload="auto"></audio>
 
+<!-- Controles -->
 <div class="controls">
     <button id="themeBtn" onclick="toggleTheme()">Changer d'ambiance</button>
     <button onclick="flyPages()">Faire voler les pages</button>
     <button onclick="toggleFire()">Feu</button>
 </div>
 
+<!-- Livro -->
 <div class="book-container" id="bookContainer">
     <div class="book">
 
-        <!-- Fogo Realista -->
-        <div class="flame-box" id="fireContainer">
-            <div class="flame red"></div>
-            <div class="flame orange"></div>
-            <div class="flame yellow"></div>
-            <div class="flame white"></div>
-            <div class="circle blue"></div>
-            <div class="circle black"></div>
+        <!-- 🔥 Fogo realista dentro do livro -->
+        <div class="fire-container active" id="fireContainer">
+            <div class="flame-box">
+                <div class="flame red"></div>
+                <div class="flame orange"></div>
+                <div class="flame yellow"></div>
+                <div class="flame white"></div>
+                <div class="circle blue"></div>
+                <div class="circle black"></div>
+            </div>
         </div>
 
+        <!-- Páginas e capas -->
         <div class="page back-cover"></div>
         <div class="spine"></div>
         <div class="page inner-page p3">
@@ -51,6 +57,7 @@
                 <div class="ornament"></div>
             </div>
         </div>
+
     </div>
 </div>
 
