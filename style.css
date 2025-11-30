@@ -276,4 +276,6 @@ button:hover {
 
 @keyframes floatUp {
     0% { opacity: 0; transform: translate(0, 0) scale(0); }
-    10% { opacity: 1; transform: translate(var(--tx), -50px) scale(1); }
+    10% { opacity: 1; transform: translate(var(--tx), -50px) scale(1); 
+        
+}
